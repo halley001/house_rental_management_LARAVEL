@@ -4,18 +4,34 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>HRM | House Rent management System</title>
+        <title>HRM | House Rent and management System</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/jquery.timepicker.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
         <style>
             /* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.absolute{position:absolute}.relative{position:relative}.-left-20{left:-5rem}.top-0{top:0px}.-bottom-16{bottom:-4rem}.-left-16{left:-4rem}.-mx-3{margin-left:-0.75rem;margin-right:-0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.size-12{width:3rem;height:3rem}.size-5{width:1.25rem;height:1.25rem}.size-6{width:1.5rem;height:1.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-\[calc\(100\%\+8rem\)\]{width:calc(100% + 8rem)}.w-auto{width:auto}.max-w-\[877px\]{max-width:877px}.max-w-2xl{max-width:42rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.rounded-\[10px\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-sm{border-radius:0.125rem}.bg-\[\#FF2D20\]\/10{background-color:rgb(255 45 32 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.stroke-\[\#FF2D20\]{stroke:#FF2D20}.object-cover{object-fit:cover}.object-top{object-position:top}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.font-sans{font-family:Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-sm\/relaxed{font-size:0.875rem;line-height:1.625}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0px_14px_34px_0px_rgba\(0\2c 0\2c 0\2c 0\.08\)\]{--tw-shadow:0px 14px 34px 0px rgba(0,0,0,0.08);--tw-shadow-colored:0px 14px 34px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-transparent{--tw-ring-color:transparent}.ring-white\/\[0\.05\]{--tw-ring-color:rgb(255 255 255 / 0.05)}.drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.06\)\]{--tw-drop-shadow:drop-shadow(0px 4px 34px rgba(0,0,0,0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.25\)\]{--tw-drop-shadow:drop-shadow(0px 4px 34px rgba(0,0,0,0.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-\[\#FF2D20\] *::selection{--tw-bg-opacity:1;background-color:rgb(255 45 32 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-\[\#FF2D20\]::selection{--tw-bg-opacity:1;background-color:rgb(255 45 32 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-black:hover{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.hover\:text-black\/70:hover{color:rgb(0 0 0 / 0.7)}.hover\:ring-black\/20:hover{--tw-ring-color:rgb(0 0 0 / 0.2)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus-visible\:ring-1:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 45 32 / var(--tw-ring-opacity))}@media (min-width: 640px){.sm\:size-16{width:4rem;height:4rem}.sm\:size-6{width:1.5rem;height:1.5rem}.sm\:pt-5{padding-top:1.25rem}}@media (min-width: 768px){.md\:row-span-3{grid-row:span 3 / span 3}}@media (min-width: 1024px){.lg\:col-start-2{grid-column-start:2}.lg\:h-16{height:4rem}.lg\:max-w-7xl{max-width:80rem}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:flex-col{flex-direction:column}.lg\:items-end{align-items:flex-end}.lg\:justify-center{justify-content:center}.lg\:gap-8{gap:2rem}.lg\:p-10{padding:2.5rem}.lg\:pb-10{padding-bottom:2.5rem}.lg\:pt-0{padding-top:0px}.lg\:text-\[\#FF2D20\]{--tw-text-opacity:1;color:rgb(255 45 32 / var(--tw-text-opacity))}}@media (prefers-color-scheme: dark){.dark\:block{display:block}.dark\:hidden{display:none}.dark\:bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.dark\:bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity))}.dark\:via-zinc-900{--tw-gradient-to:rgb(24 24 27 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.dark\:to-zinc-900{--tw-gradient-to:#18181b var(--tw-gradient-to-position)}.dark\:text-white\/50{color:rgb(255 255 255 / 0.5)}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-white\/70{color:rgb(255 255 255 / 0.7)}.dark\:ring-zinc-800{--tw-ring-opacity:1;--tw-ring-color:rgb(39 39 42 / var(--tw-ring-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:hover\:text-white\/70:hover{color:rgb(255 255 255 / 0.7)}.dark\:hover\:text-white\/80:hover{color:rgb(255 255 255 / 0.8)}.dark\:hover\:ring-zinc-700:hover{--tw-ring-opacity:1;--tw-ring-color:rgb(63 63 70 / var(--tw-ring-opacity))}.dark\:focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 45 32 / var(--tw-ring-opacity))}.dark\:focus-visible\:ring-white:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 255 255 / var(--tw-ring-opacity))}}
+
+
         </style>
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    {{-- <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
             <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="" />
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
@@ -168,5 +184,628 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body> --}}
+
+    <body>
+		<div class="wrap">
+			<div class="container">
+				<div class="row justify-content-between">
+						<div class="col d-flex align-items-center">
+							<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+						</div>
+						<div class="col d-flex justify-content-end">
+							<div class="social-media">
+				    		<p class="mb-0 d-flex">
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+				    		</p>
+			        </div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html">HR<span>M.</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+            @if(Route::has('login'))
+	        <ul class="ml-auto navbar-nav">
+	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	        	{{-- <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li> --}}
+	        	<li class="nav-item"><a href="rooms.html" class="nav-link">Available for rent</a></li>
+                @auth
+                <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a></li>
+                @else
+	          <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+              @endauth
+              @if (Route::has('register'))
+              <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+              @endif
+              @endif
+	          {{-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> --}}
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate">
+          	<h2 class="subheading">Welcome to House Rental and Management</h2>
+          	<h1 class="mb-4 raaeys">Rent an appartment enjoy your stay</h1>
+            <p><a href="#" class="btn btn-primary">Learn more</a> <a href="#" class="btn btn-white">Contact us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-book ftco-no-pt ftco-no-pb">
+    	<div class="container">
+	    	<div class="row justify-content-end">
+	    		<div class="col-lg-4">
+						<form action="#" class="appointment-form">
+							<h3 class="mb-3">Book your apartment</h3>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+			    					<input type="text" class="form-control" placeholder="Full Name">
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="input-wrap">
+			            		<div class="icon"><span class="ion-md-calendar"></span></div>
+			            		<input type="text" class="form-control appointment_date-check-in" placeholder="Check-In">
+		            		</div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="input-wrap">
+			            		<div class="icon"><span class="ion-md-calendar"></span></div>
+			            		<input type="text" class="form-control appointment_date-check-out" placeholder="Check-Out">
+		            		</div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="" id="" class="form-control">
+	                      	<option value="">Adults</option>
+	                        <option value="">1</option>
+	                        <option value="">2</option>
+	                        <option value="">3</option>
+	                        <option value="">4</option>
+	                        <option value="">5</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="" id="" class="form-control">
+	                      	<option value="">Children</option>
+	                        <option value="">1</option>
+	                        <option value="">2</option>
+	                        <option value="">3</option>
+	                        <option value="">4</option>
+	                        <option value="">5</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<input type="text" class="form-control" placeholder="Phone number">
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="input-wrap">
+			            		<div class="icon"><span class="ion-ios-clock"></span></div>
+			            		<input type="text" class="form-control appointment_time" placeholder="Time">
+		            		</div>
+			    				</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <input type="submit" value="Book Appartment Now" class="px-4 py-3 btn btn-primary">
+			            </div>
+								</div>
+							</div>
+	    			</form>
+	    		</div>
+	    	</div>
+	    </div>
+    </section>
+
+    <section class="ftco-section ftco-services">
+    	<div class="container">
+    		<div class="row">
+          <div class="px-4 col-md-4 d-flex services align-self-stretch ftco-animate">
+            <div class="text-center d-block services-wrap">
+              <div class="img" style="background-image: url(images/services-1.jpg);"></div>
+              <div class="px-3 py-4 media-body">
+                <h3 class="heading">Map Direction</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p><a href="#" class="btn btn-primary">Read more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 col-md-4 d-flex services align-self-stretch ftco-animate">
+            <div class="text-center d-block services-wrap">
+              <div class="img" style="background-image: url(images/services-2.jpg);"></div>
+              <div class="px-3 py-4 media-body">
+                <h3 class="heading">Accomodation Services</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p><a href="#" class="btn btn-primary">Read more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 col-md-4 d-flex services align-self-stretch ftco-animate">
+            <div class="text-center d-block services-wrap">
+              <div class="img" style="background-image: url(images/services-3.jpg);"></div>
+              <div class="px-3 py-4 media-body">
+                <h3 class="heading">Great Experience</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p><a href="#" class="btn btn-primary">Read more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light">
+			<div class="container-fluid px-md-0">
+				<div class="pb-5 mb-3 row no-gutters justify-content-center">
+          <div class="text-center col-md-7 heading-section ftco-animate">
+            <h2>Apartment Room</h2>
+          </div>
+        </div>
+				<div class="row no-gutters">
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img" style="background-image: url(images/room-1.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="p-4 text-center text p-xl-5">
+    							<p class="mb-0 star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+    							<!-- <p class="mb-0"><span class="mr-1 price">$120.00</span> <span class="per">per night</span></p> -->
+	    						<h3 class="mb-3"><a href="rooms.html">Suite Room</a></h3>
+	    						<ul class="list-accomodation">
+	    							<li><span>Max:</span> 3 Persons</li>
+	    							<li><span>Size:</span> 45 m2</li>
+	    							<li><span>View:</span> Sea View</li>
+	    							<li><span>Bed:</span> 1</li>
+	    						</ul>
+	    						<p class="pt-1"><a href="room-single.html" class="px-3 py-2 btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img" style="background-image: url(images/room-2.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="p-4 text-center text p-xl-5">
+    							<p class="mb-0 star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+    							<!-- <p class="mb-0"><span class="mr-1 price">$120.00</span> <span class="per">per night</span></p> -->
+	    						<h3 class="mb-3"><a href="rooms.html">Standard Room</a></h3>
+									<ul class="list-accomodation">
+	    							<li><span>Max:</span> 3 Persons</li>
+	    							<li><span>Size:</span> 45 m2</li>
+	    							<li><span>View:</span> Sea View</li>
+	    							<li><span>Bed:</span> 1</li>
+	    						</ul>
+	    						<p class="pt-1"><a href="room-single.html" class="px-3 py-2 btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
+    					<div class="half right-arrow d-flex align-items-center">
+    						<div class="p-4 text-center text p-xl-5">
+    							<p class="mb-0 star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+    							<!-- <p class="mb-0"><span class="mr-1 price">$120.00</span> <span class="per">per night</span></p> -->
+	    						<h3 class="mb-3"><a href="rooms.html">Family Room</a></h3>
+									<ul class="list-accomodation">
+	    							<li><span>Max:</span> 3 Persons</li>
+	    							<li><span>Size:</span> 45 m2</li>
+	    							<li><span>View:</span> Sea View</li>
+	    							<li><span>Bed:</span> 1</li>
+	    						</ul>
+	    						<p class="pt-1"><a href="room-single.html" class="px-3 py-2 btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/room-4.jpg);"></a>
+    					<div class="half right-arrow d-flex align-items-center">
+    						<div class="p-4 text-center text p-xl-5">
+    							<p class="mb-0 star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+    							<!-- <p class="mb-0"><span class="mr-1 price">$120.00</span> <span class="per">per night</span></p> -->
+	    						<h3 class="mb-3"><a href="rooms.html">Deluxe Room</a></h3>
+									<ul class="list-accomodation">
+	    							<li><span>Max:</span> 3 Persons</li>
+	    							<li><span>Size:</span> 45 m2</li>
+	    							<li><span>View:</span> Sea View</li>
+	    							<li><span>Bed:</span> 1</li>
+	    						</ul>
+	    						<p class="pt-1"><a href="room-single.html" class="px-3 py-2 btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+			</div>
+		</section>
+
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="pb-5 mb-3 row justify-content-center">
+          <div class="text-center col-md-7 heading-section ftco-animate">
+            <h2>Happy Clients &amp; Feedbacks</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+							<div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="pl-4 text">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Racky Henderson</p>
+                    <span class="position">Father</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                  </div>
+                  <div class="pl-4 text">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Henry Dee</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                  </div>
+                  <div class="pl-4 text">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Mark Huff</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(images/person_4.jpg)">
+                  </div>
+                  <div class="pl-4 text">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Rodel Golez</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="pl-4 text">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Ken Bosh</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-6 wrap-about">
+						<div class="mb-4 img img-2" style="background-image: url(images/about.jpg);">
+						</div>
+						<h2>The most recommended vacation rental</h2>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					</div>
+					<div class="col-md-6 wrap-about ftco-animate">
+	          <div class="heading-section">
+	          	<div class="pl-md-5">
+		            <h2 class="mb-2">What we offer</h2>
+	            </div>
+	          </div>
+	          <div class="pl-md-5">
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+							<div class="row">
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-diet"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Tea Coffee</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-workout"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Hot Showers</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-diet-1"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Laundry</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-first"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Air Conditioning</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-first"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Free Wifi</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-first"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Kitchen</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-first"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Ironing</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		            <div class="services-2 col-lg-6 d-flex w-100">
+		              <div class="icon d-flex justify-content-center align-items-center">
+		            		<span class="flaticon-first"></span>
+		              </div>
+		              <div class="pl-3 media-body">
+		                <h3 class="heading">Lovkers</h3>
+		                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+		              </div>
+		            </div>
+		          </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-intro" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="text-center col-md-9">
+						<h2>Ready to get started</h2>
+						<p class="mb-4">It’s safe to book online with us! Get your dream stay in clicks or drop us a line with your questions.</p>
+						<p class="mb-0"><a href="#" class="px-4 py-3 btn btn-primary">Book now</a> <a href="#" class="px-4 py-3 btn btn-white">Contact us</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="pb-5 mb-3 row justify-content-center">
+          <div class="text-center col-md-7 heading-section ftco-animate">
+            <h2>Latest news from our blog</h2>
+            <span class="subheading">News &amp; Blog</span>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="rounded block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="p-4 text-center text">
+                <h3 class="heading"><a href="#">Work Hard, Party Hard in a Luxury Chalet in the Alps</a></h3>
+                <div class="mb-2 meta">
+                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="rounded block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="p-4 text-center text">
+                <h3 class="heading"><a href="#">Work Hard, Party Hard in a Luxury Chalet in the Alps</a></h3>
+                <div class="mb-2 meta">
+                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="rounded block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="p-4 text-center text">
+                <h3 class="heading"><a href="#">Work Hard, Party Hard in a Luxury Chalet in the Alps</a></h3>
+                <div class="mb-2 meta">
+                  <div><a href="#">January 30, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="mb-4 col-md-6 col-lg-3 mb-md-0">
+						<h2 class="footer-heading"><a href="#" class="logo">Vacation Rental</a></h2>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+						<a href="#">Read more <span class="fa fa-chevron-right" style="font-size: 11px;"></span></a>
+					</div>
+					<div class="mb-4 col-md-6 col-lg-3 mb-md-0">
+						<h2 class="footer-heading">Services</h2>
+						<ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Map Direction</a></li>
+              <li><a href="#" class="py-1 d-block">Accomodation Services</a></li>
+              <li><a href="#" class="py-1 d-block">Great Experience</a></li>
+              <li><a href="#" class="py-1 d-block">Perfect central location</a></li>
+            </ul>
+					</div>
+					<div class="mb-4 col-md-6 col-lg-3 mb-md-0">
+						<h2 class="footer-heading">Tag cloud</h2>
+						<div class="tagcloud">
+	            <a href="#" class="tag-cloud-link">apartment</a>
+	            <a href="#" class="tag-cloud-link">home</a>
+	            <a href="#" class="tag-cloud-link">vacation</a>
+	            <a href="#" class="tag-cloud-link">rental</a>
+	            <a href="#" class="tag-cloud-link">rent</a>
+	            <a href="#" class="tag-cloud-link">house</a>
+	            <a href="#" class="tag-cloud-link">place</a>
+	            <a href="#" class="tag-cloud-link">drinks</a>
+	          </div>
+					</div>
+					<div class="mb-4 col-md-6 col-lg-3 mb-md-0">
+						<h2 class="footer-heading">Subcribe</h2>
+						<form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </form>
+            <h2 class="mt-5 footer-heading">Follow us</h2>
+            <ul class="p-0 ftco-footer-social">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+					</div>
+				</div>
+			</div>
+			<div class="py-5 mt-5 w-100 border-top">
+				<div class="container">
+					<div class="row">
+	          <div class="col-md-6 col-lg-8">
+
+	            <p class="mb-0 copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">Harts</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	          <div class="col-md-6 col-lg-4 text-md-right">
+	          	<p class="mb-0 list-unstyled">
+	          		<a class="mr-md-3" href="#">Terms</a>
+	          		<a class="mr-md-3" href="#">Privacy</a>
+	          		<a class="mr-md-3" href="#">Compliances</a>
+	          	</p>
+	          </div>
+	        </div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('js/popper.min.jss') }}"></script>
+  <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+  <script src="{{ asset('js/jquery.timepicker.min.js') }}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{ asset('js/scrollax.min.jss') }}"></script>
+  <script src="{{ asset('js/google-map.js') }}"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
+
+
+
+  </body>
 </html>

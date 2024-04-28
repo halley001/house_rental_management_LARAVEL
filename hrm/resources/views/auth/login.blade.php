@@ -10,14 +10,14 @@
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
 </head>
-<body class="loginbody">
-    <div class="container logincontainer">
+<body class=" loginbody">
+    <div class="container bg-gray-300 logincontainer">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}" class="content-end loginform">
         @csrf
-
+        <div><h1>HR<span>M.</span>  Login</h1></div>
         <!-- Email Address -->
         <div class="">
             <x-input-label for="email" :value="__('Email')" /><br>

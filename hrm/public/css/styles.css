@@ -9444,25 +9444,38 @@
       /* Login Page General styles */
 
       .logincontainer{
-        padding-left: 50rem;
+        display: flex;
         padding-bottom: 0rem;
         padding-top: 7rem;
+        justify-content: center;
       }
 
       .loginform{
-        background-color: gainsboro;
+        background-color: #E8E8E8;
         padding: 3rem;
+      }
+
+      .loginbody{
+        background-color: lightgrey;
       }
 
 
       .registerContainer{
         display:flex;
         justify-content: center;
-        color: #000;
+
 
       }
 
       .registerForm{
+        background-color: #E8E8E8 ;
+        padding: 2rem;
+      }
+
+      .registerbody{
         background-color: lightgrey;
-        padding: 3rem;
+      }
+
+      .loginFormTitle{
+        justify-content: center;
       }

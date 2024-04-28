@@ -10,12 +10,14 @@
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
 </head>
-<body class="">
+<body class="registerbody">
 
 <div class="container mt-5 registerContainer" >
 
     <form method="POST" action="{{ route('register') }}" class="registerForm">
         @csrf
+
+        <div><h1>HR<span>M.</span>  Register</h1></div>
 
         <!-- Name -->
         <div>

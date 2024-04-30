@@ -218,7 +218,7 @@
 	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	        	{{-- <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li> --}}
-	        	<li class="nav-item"><a href="rooms.html" class="nav-link">Available for rent</a></li>
+	        	<li class="nav-item"><a href="rooms.html" class="nav-link">Houses Available</a></li>
                 @auth
                 <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a></li>
                 @else

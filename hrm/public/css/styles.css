@@ -9479,3 +9479,8 @@
       .loginFormTitle{
         justify-content: center;
       }
+
+      .forgotPassContainer{
+        display: flex;
+        justify-content: center;
+      }
